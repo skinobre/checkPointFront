@@ -1,120 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
 
-body{
-    font-family: 'Nunito';
-    font-size: 18px;
-    background-color: #2E2A23;
-    margin: 0%;
-}
-
-input[type="text" i], textarea {
-    width: 100%;
+body {
+  font-family: 'Nunito';
+  font-size: 18px;
+  margin: 0%;
+  font-weight: 200;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 35px;
-    background-color: #785889;
-    align-items: center;
-}
-
-
-input[type=submit] {
-    border: none;
-    padding: 16px 64px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    max-width: 300px;
-    border-radius: 50px;
-    
-
-}
-
-input[type=submit]:hover {
-    background-color: #000000;
-    color: aliceblue;
-}
-
-
-input {
-    margin-bottom: 15px;
-    padding: 5px;
-
-}
-
-
-.card {
-    background-color: aliceblue;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px;
-    box-shadow: 10px 10px 10px #000000;
-    max-width: 25%;
-}
-
-
-.card img {
-    max-width: 100%;
-
-}
-
-.amarelo {
-    background-color: #F4E409;
-    color: #000000;
-}
-
-.card-wraper {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+/* Cabeçalho */
 
 header {
-    background-color: #785889;
+  background-color: #785889;
+  color: aliceblue;
+  padding: 50px 0;
 }
 
-header .container{
-    display: flex;
-    justify-content: center;
-    max-width: 500px;
-    
+header h1 {
+  margin: 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* Formulário */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+}
+
+input[type='submit'] {
+  border: none;
+  padding: 16px 64px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  max-width: 300px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+input[type='submit']:hover {
+  background-color: #000000;
+  color: aliceblue;
 }
 
 label {
-    color: aliceblue;
+  color: aliceblue;
 }
 
-.escolha{
-    border: none;
-    padding: 0%;
-
+.escolha {
+  border: none;
+  padding: 0;
 }
 
-.escolha label{
-    margin-right: 60px;
+.escolha label {
+  margin-right: 60px;
 }
 
+.escolha label:last-child {
+  margin-right: 0;
+}
 
+/* Cards */
 
-@media (max-width: 600px){
-    .card {
-        width: 100%;
-        max-width: 80%;
-        margin: 0%;
-        margin-top: 20px;
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    }
-    .card-wraper {
-        flex-direction: column;
-        align-items: center;
-    }
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 10px 10px 10px #000000;
+  max-width: 25%;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card .logo {
+  max-height: 30px;
+}
+
+/* Cores */
+.aliceblue {
+  background-color: aliceblue;
+}
+
+.amarelo {
+  background-color: #f4e409;
+  color: #000000;
+}
+
+.lilas {
+  background-color: #785889;
+  color: #ffffff;
+}
+
+.grafite {
+  background-color: #2e2a23;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    max-width: 80%;
+    margin: 0%;
+    margin-top: 20px;
+  }
+  .card-wraper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
