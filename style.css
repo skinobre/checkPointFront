@@ -7,16 +7,14 @@ body{
     margin: 0%;
 }
 
-input[type="text" i] {
+input[type="text" i], textarea {
     width: 100%;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-
 }
-
 
 form {
     width: 100%;
@@ -59,8 +57,7 @@ input {
     border-radius: 5px;
     margin: 20px;
     box-shadow: 10px 10px 10px #000000;
-    max-width: 30%;
-
+    max-width: 25%;
 }
 
 
@@ -77,6 +74,8 @@ input {
 .card-wraper {
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header {
